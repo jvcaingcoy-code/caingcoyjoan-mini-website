@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---HEAD--->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thriftie Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+  <script src="product.json"></script>
+  <script src="server.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<!---BODY--->
+
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">THRIFTIE</div>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+<!---NAV--->
+      <nav class="nav-menu">
+        <ul class="nav-list ">
+          <li><a href="Product.html">SHOP</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="profile.html">PROFILE</a></li>
+          <li class="cart-icon" aria-label="Shopping cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </li>
+        
+        
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!---BANNER-->
+
+  <section class="banner">
+  <div class="container banner-container">
+    <img src="Pictures/Thriftie store.jpg" alt="Thriftie Store Banner" class="banner-image">
+    <div class="banner-text">
+      <h1>Welcome to Thriftie Store</h1>
+      <p>Discover unique thrift finds at unbeatable prices!</p>
+      <a href="#shop" class="btn btn-primary">Shop Now</a>
+    </div>
+  </div>
+</section>
+
+
+<!---MAIN-->
+  <main class="container main-container">
+    <section class="product-filters">
+      <ul class="filters-list">
+        <li><button class="filter-btn active" aria-pressed="true">All Products</button></li>
+        <li><button class="filter-btn" aria-pressed="false">Jackets</button></li>
+        <li><button class="filter-btn" aria-pressed="false">Pants</button></li>
+        <li><button class="filter-btn" aria-pressed="false">Anik-anik</button></li>
+      </ul>
+
+<!--Sorting menu-->
+      <div class="sorting">
+        <label for="sort-select">Default sorting</label>
+        <select id="sort-select" name="sort">
+          <option value="default">Default sorting</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name-asc">Name: A to Z</option>
+          <option value="name-desc">Name: Z to A</option>
+        </select>
+      </div>
+    </section>
+
+      <!--ALL PRODUCT SECTION-->
+
+    <section class="product-grid">
+
+      <!--JACKETS 1 Hoodie-->
+      <article class="product-card">
+        <img src="Pictures/Hoodie.png" alt="Hoodie" />
+        <h3> Hoodie</h3>
+        <p class="price">
+          <span class="price-regular">PHP500.00</span>
+          <span class="price-sale">PHP299.00</span>
+        </p>
+      </article>
+
+      <!--JACKETS 2 Wind B-->
+      <article class="product-card">
+        <img src="Pictures/Windbreaker.png" alt=" Wind Breaker" />
+        <h3> Wind Breaker</h3>
+        <p class="price">
+          <span class="price-regular">PHP900.00</span>
+          <span class="price-sale">PHP499.00</span>
+        </p>
+      </article>
+
+      <!--JACKETS 3 Track J-->
+      <article class="product-card">
+        <img src="Pictures/Track.png" alt=" Track Jacket" />
+        <h3> Track Jacket</h3>
+        <p class="price">
+          <span class="price-regular">PHP899.00</span>
+          <span class="price-sale">PHP399.00</span>
+        </p>
+      </article>
+
+      <!--JACKETS 4 Cardi-->
+      <article class="product-card">
+        <img src="Pictures/Cardigan.png" alt=" Cardigan" />
+        <h3> Checkerd Cardigan</h3>
+        <p class="price">
+          <span class="price-regular">PHP499.00</span>
+          <span class="price-sale">PHP299.00</span>
+        </p>
+      </article>
+
+      <!--Pants 1-->
+      <article class="product-card">
+        <img src="Pictures/Baggy pants.png" alt=" Baggy Jeans" />
+        <h3> Baggy Jeans</h3>
+        <p class="price">
+          <span class="price-regular">PHP599.00</span>
+          <span class="price-sale">PHP399.00</span>
+        </p>
+      </article>
+
+      <!--Pants 2-->
+      <article class="product-card">
+        <img src="Pictures/boyfriend jeans.png" alt=" Boyfriend Jeans" />
+        <h3> Boyfriend Jeans</h3>
+        <p class="price">
+          <span class="price-regular">PHP300.00</span>
+          <span class="price-sale">PHP199.00</span>
+        </p>
+      </article>
+
+      <!--Pants 3-->
+      <article class="product-card">
+        <img src="Pictures/Trouser.png" alt=" Trouser " />
+        <h3> Trouser</h3>
+        <p class="price">
+          <span class="price-regular">PHP500.00</span>
+          <span class="price-sale">PHP399.00</span>
+        </p>
+      </article>
+
+      <!--Pants 4-->
+      <article class="product-card">
+        <img src="Pictures/Wide leg jeans.png" alt=" Wide leg jeans" />
+        <h3> Wide leg jeans</h3>
+        <p class="price">
+          <span class="price-regular">PHP699.00</span>
+          <span class="price-sale">PHP399.00</span>
+        </p>
+      </article>
+
+       <!--Anik anik 1-->
+      <article class="product-card">
+        <img src="Pictures/cap.png" alt=" Cap" />
+        <h3> Cap</h3>
+        <p class="price">
+          <span class="price-regular">PHP399</span>
+          <span class="price-sale">PHP 299.00</span>
+        </p>
+      </article>
+
+       <!--Anik anik 2-->
+      <article class="product-card">
+        <img src="Pictures/glasses.png" alt="Glasses" />
+        <h3> Glasses</h3>
+        <p class="price">
+          <span class="price-regular">PHP#100.00</span>
+          <span class="price-sale">PHP59.00</span>
+        </p>
+      </article>
+
+       <!--Anik anik 3-->
+      <article class="product-card">
+        <img src="Pictures/keychain1.png" alt=" Keychain 1" />
+        <h3> Keychain</h3>
+        <p class="price">
+          <span class="price-regular">PHP50</span>
+          <span class="price-sale">PHP 29.00</span>
+        </p>
+      </article>
+
+       <!--Anik anik 4-->
+      <article class="product-card">
+        <img src="Pictures/keychain2.png" alt=" Keychain 2" />
+        <h3> Lucky Keychain</h3>
+        <p class="price">
+          <span class="price-regular">PHP50.00</span>
+          <span class="price-sale">PHP29.00</span>
+        </p>
+      </article>
+      
+    </section>
+  </main>
+
+
+    </section>
+  </main>
+
+<!---Footer --->
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <section class="footer-contact">
+        <h4>DON'T BE SHY, JUST SAY HI!</h4>
+        <div class="footer-columns">
+          <div>
+            <h5>PHILIPPINES</h5>
+            <address>123 Sampaloc Street, Metro Manila, 16000</address>
+          </div>
+          <div>
+            <h5>START A CONVERSATION</h5>
+            <p><a href="mailto:hi@thrifties.com">hi@thrifties.com</a></p>
+            <p>+63 123 456 789 0</p>
+          </div>
+          <div>
+            <h5>CAREER</h5>
+            <p><a href="#">Want a work somewhere you can be proud of? Apply now</a></p>
+            <p><a href="#">View Current Opportunities</a></p>
+          </div>
+          <div>
+            <h5>FOLLOW US</h5>
+            <ul class="social-links">
+              <li><a href="#" aria-label="Facebook">Facebook</a></li>
+              <li><a href="#" aria-label="Twitter">Twitter</a></li>
+              <li><a href="#" aria-label="Instagram">Instagram</a></li>
+              <li><a href="#" aria-label="Behance">Tiktok</a></li>
+              <li><a href="#" aria-label="Behance">Behance</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="footer-bottom">
+        <p>
+          <a href="#">TERMS &amp; CONDITION</a> | <a href="#">PRIVACY POLICY</a>
+        </p>
+        <p>© 2027 ThritieStore. All rights reserved.</p>
+      </section>
+    </div>
+  </footer>
+
+  <!---Javascript--->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

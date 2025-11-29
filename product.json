@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Hoodie",
+    "priceRegular": 500,
+    "priceSale": 299,
+    "image": "Pictures/Hoodie.png",
+    "description": "Soft cotton hoodie, perfect for any weather."
+  },
+  {
+    "id": 2,
+    "name": "Wind Breaker",
+    "priceRegular": 900,
+    "priceSale": 499,
+    "image": "Pictures/Windbreaker.png",
+    "description": "Windproof and stylish for outdoor activities."
+  }
+]
